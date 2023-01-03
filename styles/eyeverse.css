@@ -1,12 +1,12 @@
 @font-face{
-  font-family: 'Apple II';
-  src: url('../fonts/font.ttf');
+  font-family: 'VT323';
+  src: url('../fonts/VT323-Regular.ttf');
 }
 
 body {
   color: #ff8012;
   font-size: 2.2vh;
-  font-family: 'Apple II';
+  font-family: 'VT323';
   line-height: 4vh;
   /* screen glow */
   background-image: radial-gradient(
@@ -71,7 +71,7 @@ a {
   color: orange;
   background: transparent;
   font-size: 2vh;
-  font-family: "Apple II";
+  font-family: "VT323";
   border: none;
   position: relative;
   bottom: 0.175vh;
