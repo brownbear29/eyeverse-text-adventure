@@ -12,7 +12,9 @@ const eyeDisk1 = () => ({
       // here, we use it to change the foyer's description
       onLook: () => {
         const room = getRoom('foyer');
-        room.desc = `You are currently standing in the foyer. There's a huge **MONSTERA** plant to your right, and a massive **WINDOW** to your left bathing the room in natural light. Both the **PLANT** and the **WINDOW** stretch to the ceiling, which must be at least 25 feet high.
+        room.desc = `You are currently standing in the foyer. 
+        There's a huge **MONSTERA** plant to your right, and a massive **WINDOW** to your left bathing the room in natural light. 
+        Both the **PLANT** and the **WINDOW** stretch to the ceiling, which must be at least 25 feet high.
 
         __Hints__
 
