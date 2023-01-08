@@ -273,8 +273,7 @@ const eyeDisk1 = () => ({
           line: `Actually, you can do that yourself! There happens to be a secret, custom **UNLOCK** command. This powerful command will remove blocks on any exit. Just type **UNLOCK** to use it.`,
           removeOnRead: true,
         },
-        },
-      ],
+      ]
     },
     {
       name: 'Artist',
