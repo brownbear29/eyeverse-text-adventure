@@ -257,7 +257,7 @@ const eyeDisk1 = () => ({
               desc: `This is a magical item. Type **USE STYLE-CHANGER** to try it out!`,
               onUse: () => {
                 const currentStylesheet = document.getElementById('styles').getAttribute('href');
-                const newName = currentStylesheet.includes('modern') ? 'retro' : 'modern';
+                const newName = currentStylesheet.includes('eyeverse') ? 'retro' : 'eyeverse';
                 println(`You changed the stylesheet to ${newName.toUpperCase()}.css.`);
                 selectStylesheet(`styles/${newName}.css`);
               }

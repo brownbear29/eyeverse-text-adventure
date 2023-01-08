@@ -4,7 +4,7 @@
 }
 
 body {
-  color: #ff8012;
+  color: #EAEAEA;
   font-size: 3.2vh;
   font-family: 'VT323';
   line-height: 4vh;
@@ -12,8 +12,8 @@ body {
   background-image: radial-gradient(
     #1B1B1B, black 120%
   );
-  /* text glow */
-  text-shadow: 0 0 5px rgba(255, 78, 0, 0.6);
+  /* text glow
+  text-shadow: 0 0 5px rgba(170, 170, 170, 0.6);*/
 }
 
 /* scanlines */
@@ -68,7 +68,7 @@ a {
 #input {
   height: 4vh;
   width: 98.5vh;
-  color: orange;
+  color: white;
   background: transparent;
   font-size: 3.2vh;
   font-family: "VT323";
@@ -87,9 +87,9 @@ span {
 }
 
 @keyframes blink {
-  0% {background: orange;}
-  49% {background: orange;}
+  0% {background: whitesmoke;}
+  49% {background: whitesmoke;}
   60% {background: transparent;}
   99% {background: transparent;}
-  100% {background: orange;}
+  100% {background: whitesmoke;}
 }
