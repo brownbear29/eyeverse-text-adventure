@@ -156,8 +156,8 @@ const eyeDisk1 = () => ({
         // exits with a BLOCK cannot be used, but print a message instead
         {dir: 'north', id: 'music', block: `The door is locked.`},
         {dir: ['upstairs', 'up'], id: 'landing', block: `There's a locked **GATE** blocking your path.`},
-        {dir: 'south', id: 'foyer'},
         {dir: ['downstairs', 'down'], id: 'kitchen'},
+        {dir: 'south', id: 'foyer'},
       ],
     },
     {
@@ -192,11 +192,47 @@ const eyeDisk1 = () => ({
       name: 'Music Room',
       desc: `There is a **RED EYEPHUNK** hovering silently in the center of a black void. They appear to be awaiting instructions. (Type **TALK** to speak to the EyePhunk.)
 
-      **DOWNSTAIRS** is the Reception Desk.`,
+      **SOUTH** is the Reception Desk.`,
       exits: [
-        {dir: ['downstairs', 'down'], id: 'reception'},
+        {dir: 'south', id: 'reception'},
       ],
     },
+    {
+      id: 'kitchen',
+      name: 'Kitchen',
+      desc: `A grand stone kitchen, with a **CUPBOARD** in one corner.`,
+      items: [
+        {
+          name: 'cupboard',
+          desc: `A large wooden cupboard, with the door slightly ajar.`,
+          onLook() {
+            const key = getItem('cupboard');
+            // update the description
+            cupboard.desc = `You open the cupboard door. There is a **BRASS KEY** on a high shelf and a **LAMP**`;
+          },
+        },
+        {
+          name: 'brass key',
+          desc: `A sizeable brass key.`,
+          onTake() {
+            println(`You take the key and wonder which door it might unlock.`);
+          }
+        },
+        {
+          name: 'lamp',
+          desc: `An oil-filled lamp.`,
+          onUse() {
+            // add logic to light up the cellar when the lamp is used, only in that room
+          },
+        },    
+      ],
+      exits: [
+        {dir: ['upstairs', 'up'], id: 'reception'},
+        {dir: 'north', id: 'cellar'},
+        {dir: 'south', id: 'bakery'},
+      ],
+    },
+    // need to add more rooms here
   ],
   characters: [
     {
