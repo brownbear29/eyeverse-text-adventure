@@ -27,7 +27,7 @@ const eyeDisk1 = () => ({
       // optional list of items in the room
       items: [
         {
-          name: 'study_door',
+          name: 'Study Door',
           desc: `There are 4" metal letters nailed to the door. They spell out: "STUDY".`,
           onUse() {
             const foyer = getRoom('foyer');
@@ -40,7 +40,7 @@ const eyeDisk1 = () => ({
           },
         },
         {
-          name: ['fireplace', 'fire'], // player can refer to this item by any of these names
+          name: ['Fireplace', 'Fire'], // player can refer to this item by any of these names
           desc: `Logs are burning gently in an open fire. The crackling sound makes you feel warm and cosy.
 
           You notice **SOMETHING SHINY** lodged in the burning embers.`,
@@ -105,11 +105,12 @@ const eyeDisk1 = () => ({
       exits: [
         // GO NORTH command leads to the Reception Desk
         {dir: 'north', id: 'reception'},
+        {dir: 'west', id: 'study'},
       ],
     },
     {
       id: 'reception',
-      name: 'Reception Room',
+      name: 'Main Reception Room',
       desc: `**RONALD** is here. I'm sure he'd be happy to tell you a little more about the features available in the castle.
 
       *You can speak with characters using the **TALK** command.*
@@ -118,7 +119,7 @@ const eyeDisk1 = () => ({
 
       To the **SOUTH** is the foyer where you started your adventure.
 
-      Next to the **DESK** are **STAIRS** leading **UP**.`,
+      Next to the **DESK** are some **STAIRS** leading **UP** and an archway with what looks like some stones steps leading **DOWN**.`,
       items: [
         {
           name: 'desk',
@@ -139,16 +140,16 @@ const eyeDisk1 = () => ({
           },
         },
         {
-          name: 'gate',
+          name: 'Gate',
           desc: `A guilded gate is blocking the way to the **STAIRS**.`,
         },
         {
-          name: ['stairs', 'staircase'],
+          name: ['Stairs', 'Staircase'],
           desc: `They lead up to a door. If you squint, you can make out the word **KING'S LANDING** on the door.`,
           onUse: () => println(`Try typing GO UPSTAIRS (once you've unlocked the gate).`),
         },
         {
-          name: ['downstairs', 'kitchen'],
+          name: ['Downstairs', 'Kitchen'],
           desc: `Through an archway, you notice some stone steps leading down to what looks like a **KITCHEN**.`,
         },
       ],
