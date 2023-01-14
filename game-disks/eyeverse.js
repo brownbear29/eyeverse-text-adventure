@@ -54,7 +54,7 @@ const eyeDisk1 = () => ({
           ...:....:^!7!:.::::.  ^77777!~. ...                     .... :!!77?!  ^^^^..~?!~^:. .:::.      
         :!???7~~7?J??!...::..  :!~~~~^:. .....   .:::.    ..::.  .::::. ^~!~~7!  :^::. :J555Y7^~????^.   
         :^~~~::^~!!^. ...:..  :~~~~~^:                              ...  :~~~!7~  .:::...:~!!!!::~~~^.   
-      `
+      `,
       // optional callback when player issues the LOOK command
       // here, we use it to change the foyer's description
       onLook: () => {
