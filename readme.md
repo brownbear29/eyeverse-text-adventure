@@ -1,13 +1,3 @@
-```
-███████╗██╗   ██╗███████╗██╗   ██╗███████╗██████╗ ███████╗███████╗
-██╔════╝╚██╗ ██╔╝██╔════╝██║   ██║██╔════╝██╔══██╗██╔════╝██╔════╝
-█████╗   ╚████╔╝ █████╗  ██║   ██║█████╗  ██████╔╝███████╗█████╗  
-██╔══╝    ╚██╔╝  ██╔══╝  ╚██╗ ██╔╝██╔══╝  ██╔══██╗╚════██║██╔══╝  
-███████╗   ██║   ███████╗ ╚████╔╝ ███████╗██║  ██║███████║███████╗
-╚══════╝   ╚═╝   ╚══════╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
-                                                                  
-```
-
 An HTML-based text adventure game engine. Small and easy to use with no dependencies. Highly customizable.
 
 Very little programming is required, but several JavaScript hooks are provided if you are inclined to use them!
